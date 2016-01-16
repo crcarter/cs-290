@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>content</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+ </head>
+ <body>
+  <!--  Table with header row in bold and header column in italics
+		Alternating colors on non header and footer rows -->
+  <table>
+	<caption>Who wins? Cell content indicates the status of the row entry.</caption>
+	<tr>
+		<th></th>
+		<th>Godzilla</th>
+		<th>Batman</th>
+		<th>Shaq</th>
+		<th>Aaron Carter</th>
+		<th>Abe Lincoln</th>
+	</tr>
+	<tr>
+		<th class="row-header">Godzilla</th>
+		<td>N/A</td>
+		<td>Minor Loss</td>
+		<td>Loss</td>
+		<td>Unknown</td>
+		<td>Unknown</td>
+	</tr>
+	<tr>
+		<th class="row-header">Batman</th>
+		<td>Minor Win</td>
+		<td>N/A</td>
+		<td>Total Victory</td>
+		<td>Total Victory</td>
+		<td>Total Loss</td>
+	</tr>
+	<tr>
+		<th class="row-header">Shaq</th>
+		<td>Win</td>
+		<td>Total Loss</td>
+		<td>N/A</td>
+		<td>Minor Loss</td>
+		<td>Unknown</td>
+	</tr>
+	<tr>
+		<th class="row-header">Aaron Carter</th>
+		<td>Unknown</td>
+		<td>Total Loss</td>
+		<td>Minor Win</td>
+		<td>N/A</td>
+		<td>Unknown</td>
+	</tr>
+	<tr>
+		<th class="row-header">Abe Lincoln</th>
+		<td>Unknown</td>
+		<td>Total Victory</td>
+		<td>Unknown</td>
+		<td>Unknown</td>
+		<td>N/A</td>
+	</tr>
+	<tr>
+		<td colspan="2">Footer 1</td>
+		<td colspan="4">Footer 2</td>
+	</tr>
+  </table>
+  
+  <!-- List of 3 items -->
+  <ul>
+	<li>Soccer</li>
+	<li>Basketball</li>
+	<li>Football</li>
+  </ul>
+  
+  <!-- A div inside of a div -->
+  <div class="outer-content">
+	<div class="inner-content">
+		Here is some content.
+	</div>
+  </div>
+  
+  <!-- Get form to get text, number, password and candy choice -->
+  <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="get">
+	<fieldset>
+		<legend>Some GET Data</legend>
+		<div>
+			<label>Text here:
+				<input type="text" name="text_input" size="30" maxlength="100">
+			</label>
+		</div>
+		<div >
+			<label>Number here:
+				<input type="number" name="number_input" size="30" maxlength="100">
+			</label>
+		</div>
+		<div>
+			<label>Password here:
+				<input type="password" name="password_input" size="30" maxlength="100">
+			</label>
+		</div>
+		<div>
+			<p>Select between:
+				<br />
+				<label>
+					<input type="radio" name="candy" value="snickers" />Snickers
+				</label>
+				<br />
+				<label>
+					<input type="radio" name="candy" value="skittles" />Skittles
+				</label>
+				<br />
+				<label>
+					<input type="radio" name="candy" value="mentos" />Mentos
+				</label>
+			</p>
+			<input type="submit" value="Submit" />
+		</div>
+	</fieldset>
+  </form>
+  
+  <!-- Post form to get text, number, password and candy choice -->
+  <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="post">
+	<fieldset>
+		<legend>Some POST Data</legend>
+		<div>
+			<label>Text here:
+				<input type="text" name="text_input" size="30" maxlength="100">
+			</label>
+		</div>
+		<div >
+			<label>Number here:
+				<input type="number" name="number_input" size="30" maxlength="100">
+			</label>
+		</div>
+		<div>
+			<label>Password here:
+				<input type="password" name="password_input" size="30" maxlength="100">
+			</label>
+		</div>
+		<div>
+			<p>Select between:
+				<br />
+				<label>
+					<input type="radio" name="candy" value="snickers" />Snickers
+				</label>
+				<br />
+				<label>
+					<input type="radio" name="candy" value="skittles" />Skittles
+				</label>
+				<br />
+				<label>
+					<input type="radio" name="candy" value="mentos" />Mentos
+				</label>
+			</p>
+			<input type="submit" value="Submit" />
+		</div>
+	</fieldset>
+  </form>
+ </body>
+</html>
